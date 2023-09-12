@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 from PIL import Image
 
 st.set_page_config(page_title= 'Documentación', page_icon= '📃')
@@ -21,7 +21,7 @@ def load_lottieurl(url):
   return r.json()
 
 
-lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
+#lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
 Logo_principal = Image.open("Imagenes/Logo principal.jpg")
 Alcance_proyecto = Image.open("Imagenes/Alcance del proyecto.jpg")
 Gantt = Image.open("Imagenes/GANTT.jpeg")
@@ -79,7 +79,7 @@ with st.container():
   st.write("---")
   st.subheader("Introducción")
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Este es un proyecto que fue realizado desde la disciplina Ciencia de Datos, que busca recolectar datos para procesarlos, analizarlos y poder tomar decisiones en base a ellos. El proyecto cuenta con un EDA, una automatización de el ETL en la nube ‘Google Cloud Platform’, una carga incrementa a partir de los datos de una API, un dashboard con KPIs, y por último, un modelo de Machine Learning que devuelve cual es la mejor opción para una decisión empresarial.</p>", unsafe_allow_html=True)
-  st.lottie(lottie_coding, height= 300, key = "coding")
+  #st.lottie(lottie_coding, height= 300, key = "coding")
 
 with st.container():
   st.write("---")
