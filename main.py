@@ -90,9 +90,9 @@ with st.container():
   st.write("---")
   st.subheader("Objetivos")
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Generales:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Identificar ubicaciones y atributos estratégicos para abrir un restaurante mediante el análisis de datos a partir de la información recolectada, con el fin de maximizar la rentabilidad y la satisfacción del cliente.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	realizar un análisis de datos para identificar atributos estratégicos, desarrollar un análisis de sentimiento y clasificar ciudades en base a sus indicadores en el sector ‘restaurantes’ para un cliente con preferencias en ciudades con menor contaminación de aire.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Especificos:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Definir metodología de gestión general (roles, tareas, diagrama de Gantt, etc).<br>          ❖	Definir el stack tecnológico.<br>          ❖	Automatización de pipelines (carga incremental, etl, envío de datasets al datawarehouse).<br>          ❖	Análisis exploratorio de los datos para la creación de KPIs.<br>          ❖	Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs<br>          ❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Automatización de pipelines con ETL.<br>          ❖	Análisis exploratorio de los datos para la creación de KPIs.<br>          ❖	Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs.<br>          ❖	Implementar una carga incremental automatizada a partir de una API.<br>          ❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
 
 with st.container():
   st.write("---")
