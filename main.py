@@ -203,7 +203,12 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("KPIs (Indicadores Clave de Desempeño)")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>aaa</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CRECIMIENTO DE CANTIDAD DE RESTAURANTES POR CIUDAD (Ciudad): Negocios afiliados mes / Negocios afiliados mes anterior.(este indicador nos sirve para monitorear si el sector esta en auge o en declive en cada ciudad)</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE RELACION VALORACIONES POSITIVAS (Ciudad): Reseña positivas del mes / Reseñas registradas del mes. (reseña positiva = valoración >= 4).</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE DISPONIBILIDAD DE ATRIBUTOS DE RESTAURANTE(Restaurantes): Disponibilidad de atributos de un restaurante/Cantidad de atributos ofrecidos en los restaurantes.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE ANALISIS DE SENTIMIENTO POR RESTAURANTE(Restaurante): Puntaje de restaurante (cerca de -1  = malo, cerca de 1 = bueno)</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CONTAMINACIÓN POR HORA(Ciudad): Contaminación del mes.</p>", unsafe_allow_html=True)
+  #st.markdown("<p style='text-align: justify; font-size: 18px;'>aaa</p>", unsafe_allow_html=True)
 
 with st.container():
   st.write("---")
