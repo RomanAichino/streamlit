@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-#from streamlit_lottie import st_lottie
+from streamlit_lottie import st_lottie
 from PIL import Image
 
 st.set_page_config(page_title= 'Documentación', page_icon= '📃')
@@ -21,7 +21,7 @@ def load_lottieurl(url):
   return r.json()
 
 
-#lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
+lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
 Logo_principal = Image.open("Imagenes/Logo principal.jpg")
 Alcance_proyecto = Image.open("Imagenes/Alcance del proyecto.jpg")
 Gantt = Image.open("Imagenes/GANTT.jpeg")
@@ -79,7 +79,7 @@ with st.container():
   st.write("---")
   st.subheader("Introducción")
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Este es un proyecto que fue realizado desde la disciplina Ciencia de Datos, que busca recolectar datos para procesarlos, analizarlos y poder tomar decisiones en base a ellos. El proyecto cuenta con un EDA, una automatización de el ETL en la nube ‘Google Cloud Platform’, una carga incrementa a partir de los datos de una API, un dashboard con KPIs, y por último, un modelo de Machine Learning que devuelve cual es la mejor opción para una decisión empresarial.</p>", unsafe_allow_html=True)
-  #st.lottie(lottie_coding, height= 300, key = "coding")
+  st.lottie(lottie_coding, height= 300, key = "coding")
 
 with st.container():
   st.write("---")
@@ -90,9 +90,9 @@ with st.container():
   st.write("---")
   st.subheader("Objetivos")
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Generales:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	realizar un análisis de datos para identificar atributos estratégicos, desarrollar un análisis de sentimiento y clasificar ciudades en base a sus indicadores en el sector ‘restaurantes’ para un cliente con preferencias en ciudades con menor contaminación de aire.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Identificar ubicaciones y atributos estratégicos para abrir un restaurante mediante el análisis de datos a partir de la información recolectada, con el fin de maximizar la rentabilidad y la satisfacción del cliente.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Especificos:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Automatización de pipelines con ETL.<br>          ❖	Análisis exploratorio de los datos para la creación de KPIs.<br>          ❖	Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs.<br>          ❖	Implementar una carga incremental automatizada a partir de una API.<br>          ❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Definir metodología de gestión general (roles, tareas, diagrama de Gantt, etc).<br>          ❖	Definir el stack tecnológico.<br>          ❖	Automatización de pipelines (carga incremental, etl, envío de datasets al datawarehouse).<br>          ❖	Análisis exploratorio de los datos para la creación de KPIs.<br>          ❖	Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs<br>          ❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
 
 with st.container():
   st.write("---")
@@ -192,7 +192,13 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("Modelo de Machine Learning")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>aaa</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>La mayoria de opiniones acerca de restaurants son expresadas con 500 palabras o menos y la mayoria de opiniones son positivas en 3 de 5 categorias de rating por compound score(ver histograma 1, 2 y 4).</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Una vez realizada la etiquetacion de los resultados de compound de VADER, se puede notar el desbalance de casos positivos (1) y casos negativos (0), lo que sesga la capacidad de prediccion de un modelo de clasificacion (ver histograma 3).</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Se comprueba la relacion directa que existe (de uno a uno) entre el score compound de Vader, la relacion directa entre el score positivo, la relacion inversa entre score negativo y el rating del restaurant respectivamente (ver histograma 4 y 5).Por ejemplo, si el restaurant tiene un rating de 1 es mas probable que tenga una mala percepcion o resultado negativo en el analisis de sentimiento.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Los comentarios u opiniones(positivas o negativas) en googlemaps son mas diferenciados que en yelp, por ejemplo, en el histograma 4 la diferencia entre comentarios de 1 y 2 ratings son mucho mas diferenciados a los comentarios de 3,4 y 5 rating.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>De los modelos de clasificacion usados sin realizar validacion cruzada el score de accuracy es de un 94% en promedio y el AUC promedio de 96%. Despues de realizar la validacion cruzada en promedio(teniendo en cuenta los dos modelos) se obtiene un accuracy de 93% y un AUC de 95%. Lo anterior permite concluir que si pusieramos en produccion el modelo de machine learning para predecir comentarios positivos y negativos de acuerdo a Vader, este ultimo va a producir(asignar scores positivos) un 93% de outputs correctos (opiniones que realmente son positivas) y tendra un 7% de error en asignar scores(positivos) a los comentarios.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Comparando los resultados de yelp con los de google en terminos de accuracy, google presenta un mejor grado de prediccion de opiniones positivas en lo que respecta al valor al que un empresario/ cliente de restaurant podria acceder haciendo uso de los servicios de un restaurant. Los histogramas de ambos en cuanto al rating/stars por score compound muestran que en googlemaps se puede tener un mayor acceso a opiniones negativas tanto como positivas, lo que permite contrastar mejor que tipo de restaurants podrian ofrecer un mayor valor a los clientes y esto mismo podria ser usado para determinar mejoras en el servicio con otros datos complementarios.</p>", unsafe_allow_html=True)
+
 
 with st.container():
   st.write("---")
