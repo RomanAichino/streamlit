@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 from PIL import Image
 
 st.set_page_config(page_title= 'Documentación', page_icon= '📃')
@@ -21,7 +21,7 @@ def load_lottieurl(url):
   return r.json()
 
 
-lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
+#lottie_coding = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_0yfsb3a1.json")
 Logo_principal = Image.open("Imagenes/Logo principal.jpg")
 Alcance_proyecto = Image.open("Imagenes/Alcance del proyecto.jpg")
 Gantt = Image.open("Imagenes/GANTT.jpeg")
@@ -79,7 +79,7 @@ with st.container():
   st.write("---")
   st.subheader("Introducción")
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Este es un proyecto que fue realizado desde la disciplina Ciencia de Datos, que busca recolectar datos para procesarlos, analizarlos y poder tomar decisiones en base a ellos. El proyecto cuenta con un EDA, una automatización de el ETL en la nube ‘Google Cloud Platform’, una carga incrementa a partir de los datos de una API, un dashboard con KPIs, y por último, un modelo de Machine Learning que devuelve cual es la mejor opción para una decisión empresarial.</p>", unsafe_allow_html=True)
-  st.lottie(lottie_coding, height= 300, key = "coding")
+  #st.lottie(lottie_coding, height= 300, key = "coding")
 
 with st.container():
   st.write("---")
@@ -90,9 +90,9 @@ with st.container():
   st.write("---")
   st.subheader("Objetivos")
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Generales:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Identificar ubicaciones y atributos estratégicos para abrir un restaurante mediante el análisis de datos a partir de la información recolectada, con el fin de maximizar la rentabilidad y la satisfacción del cliente.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>❖	realizar un análisis de datos para identificar atributos estratégicos, desarrollar un análisis de sentimiento y clasificar ciudades en base a sus indicadores en el sector ‘restaurantes’ para un cliente con preferencias en ciudades con menor contaminación de aire.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Especificos:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>          ❖	Definir metodología de gestión general (roles, tareas, diagrama de Gantt, etc).<br>          ❖	Definir el stack tecnológico.<br>          ❖	Automatización de pipelines (carga incremental, etl, envío de datasets al datawarehouse).<br>          ❖	Análisis exploratorio de los datos para la creación de KPIs.<br>          ❖	Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs<br>          ❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>❖	Automatización de pipelines con ETL.<br>❖	Análisis exploratorio de los datos para la creación de KPIs.<br>❖	Automat<br>❖Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs.<br>❖	Implementar una carga incremental automatizada a partir de una API.<br>❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
 
 with st.container():
   st.write("---")
@@ -104,8 +104,8 @@ with st.container():
   st.subheader("Planificación")
   st.markdown("<p style='text-align: center; font-size: 21px;'><strong>Metodología Scrum: Roles y Planificación</strong></p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 21px;'><strong>Roles en Scrum</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Product Owner:</strong><br>          Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Asegura que el equipo trabaje en las tareas más valiosas para el cliente.<br>          Colabora con interesados y el equipo para mantener la visión clara del producto.</p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Scrum Master:</strong><br>          Facilitadora del proceso Scrum.<br>          Garantiza que el equipo siga las prácticas y principios de Scrum.<br>          Elimina obstáculos y fomenta un entorno de trabajo colaborativo.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Product Owner:</strong><br>Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Asegura que el equipo trabaje en las tareas más valiosas para el cliente.<br>          Colabora con interesados y el equipo para mantener la visión clara del producto.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Scrum Master:</strong><br>Facilitadora del proceso Scrum.<br>          Garantiza que el equipo siga las prácticas y principios de Scrum.<br>          Elimina obstáculos y fomenta un entorno de trabajo colaborativo.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Equipo de Desarrollo:</strong><br>Campos Diego<br>Aichino Roman<br>Jeffer Max<br>Vivar Eduardo</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Transforman elementos del Product Backlog en incrementos de producto entregables.<br>Transforman elementos del Product Backlog en incrementos de producto entregables.<br>Autónomos y autoorganizados, toman decisiones sobre cómo abordar tareas.<br>Colaboran para lograr los objetivos del Sprint.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Planificación en Scrum</strong></p>", unsafe_allow_html=True)
