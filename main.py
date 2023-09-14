@@ -90,7 +90,7 @@ with st.container():
   st.write("---")
   st.subheader("Objetivos")
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Generales:</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>❖	realizar un análisis de datos para identificar atributos estratégicos, desarrollar un análisis de sentimiento y clasificar ciudades en base a sus indicadores en el sector ‘restaurantes’ para un cliente con preferencias en ciudades con menor contaminación de aire.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>❖	Realizar un análisis de datos para identificar atributos estratégicos, desarrollar un análisis de sentimiento y clasificar ciudades en base a sus indicadores en el sector ‘restaurantes’ para un cliente con preferencias en ciudades con menor contaminación de aire.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Especificos:</strong></p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>❖	Automatización de pipelines con ETL.<br>❖	Análisis exploratorio de los datos para la creación de KPIs.<br>❖	Automat<br>❖Diseño de un dashboard interactivo en Power Bi para realizar el seguimiento y monitoreo de los KPIs.<br>❖	Implementar una carga incremental automatizada a partir de una API.<br>❖	Análisis de sentimiento mediante un modelo de ML.</p>", unsafe_allow_html=True)
 
@@ -192,6 +192,8 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("Modelo de Machine Learning")
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Aunque quizá la palabra correcta sea Modelos, ya que hay varios. Estos cumplen 2 funciones, el primero, busca tokenizar las opiniones de la gente para obtener una puntuación a partir de lo que escribe y así, poder filtrar por restaurantes y ciudad en la plataforma GoogleMaps; el segundo modelo, busca comparar las reseñas de ambas plataformas, con el objetivo de saber de cuales conviene fiarse mas.<br><br>Para entender todas las desiciones tomadas, adentrese en los archivos de ML en la carpeta '5_ ML' del repositorio.<br></p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 21px;'>Conclusiones del modelo:</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>La mayoria de opiniones acerca de restaurants son expresadas con 500 palabras o menos y la mayoria de opiniones son positivas en 3 de 5 categorias de rating por compound score(ver histograma 1, 2 y 4).</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Una vez realizada la etiquetacion de los resultados de compound de VADER, se puede notar el desbalance de casos positivos (1) y casos negativos (0), lo que sesga la capacidad de prediccion de un modelo de clasificacion (ver histograma 3).</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Se comprueba la relacion directa que existe (de uno a uno) entre el score compound de Vader, la relacion directa entre el score positivo, la relacion inversa entre score negativo y el rating del restaurant respectivamente (ver histograma 4 y 5).Por ejemplo, si el restaurant tiene un rating de 1 es mas probable que tenga una mala percepcion o resultado negativo en el analisis de sentimiento.</p>", unsafe_allow_html=True)
@@ -203,7 +205,7 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("KPIs (Indicadores Clave de Desempeño)")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CRECIMIENTO DE CANTIDAD DE RESTAURANTES POR CIUDAD (Ciudad): Negocios afiliados mes / Negocios afiliados mes anterior.(este indicador nos sirve para monitorear si el sector esta en auge o en declive en cada ciudad)</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CRECIMIENTO DE CANTIDAD DE RESTAURANTES POR CIUDAD (Ciudad): Negocios afiliados mes / Negocios afiliados mes anterior.(este indicador nos sirve para monitorear si el sector esta en auge o en declive en cada ciudad)</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE RELACION VALORACIONES POSITIVAS (Ciudad): Reseña positivas del mes / Reseñas registradas del mes. (reseña positiva = valoración >= 4).</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE DISPONIBILIDAD DE ATRIBUTOS DE RESTAURANTE(Restaurantes): Disponibilidad de atributos de un restaurante/Cantidad de atributos ofrecidos en los restaurantes.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE ANALISIS DE SENTIMIENTO POR RESTAURANTE(Restaurante): Puntaje de restaurante (cerca de -1  = malo, cerca de 1 = bueno)</p>", unsafe_allow_html=True)
