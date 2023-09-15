@@ -67,7 +67,7 @@ with st.container():
     </style>
   """, unsafe_allow_html=True)
 
-  st.subheader("Bienvenidos!! somos DREM DATA INSIGTHS, y esta es la documentación de el proyecto grupal de Reviews de Yelp y Google Maps. :wave: :wave: ")
+  st.subheader("Bienvenidos!! somos DREM DATA INSIGTHS, y esta es la documentación del proyecto grupal de Reviews de Yelp y Google Maps. :wave: :wave: ")
   st.title("Documentación")
 
 with st.container():
@@ -82,7 +82,7 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("Introducción")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>Este es un proyecto que fue realizado desde la disciplina Ciencia de Datos, que busca recolectar datos para procesarlos, analizarlos y poder tomar decisiones en base a ellos. El proyecto cuenta con un EDA, una automatización de el ETL en la nube ‘Google Cloud Platform’, una carga incrementa a partir de los datos de una API, un dashboard con KPIs, y por último, un modelo de Machine Learning que devuelve cual es la mejor opción para una decisión empresarial.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Este es un proyecto que fue realizado desde la disciplina Ciencia de Datos, que busca recolectar datos para procesarlos, analizarlos y poder tomar decisiones en base a ellos. El proyecto cuenta con un EDA, una automatización del ETL en la nube ‘Google Cloud Platform’, una carga incrementa a partir de los datos de una API, un dashboard con KPIs, y por último, un modelo de Machine Learning que devuelve cual es la mejor opción para una decisión empresarial.</p>", unsafe_allow_html=True)
   #st.lottie(lottie_coding, height= 300, key = "coding")
 
 with st.container():
@@ -108,10 +108,10 @@ with st.container():
   st.subheader("Planificación")
   st.markdown("<p style='text-align: center; font-size: 21px;'><strong>Metodología Scrum: Roles y Planificación</strong></p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 21px;'><strong>Roles en Scrum</strong></p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Product Owner:</strong><br>Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Responsable de definir y priorizar el Product Backlog.<br>          Asegura que el equipo trabaje en las tareas más valiosas para el cliente.<br>          Colabora con interesados y el equipo para mantener la visión clara del producto.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Product Owner:</strong><br>Responsable de definir y priorizar el Product Backlog.<br>          Asegura que el equipo trabaje en las tareas más valiosas para el cliente.<br>          Colabora con interesados y el equipo para mantener la visión clara del producto.<br>          Asegura que el equipo trabaje en las tareas más valiosas para el cliente.<br>          Colabora con interesados y el equipo para mantener la visión clara del producto.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Scrum Master:</strong><br>Facilitadora del proceso Scrum.<br>          Garantiza que el equipo siga las prácticas y principios de Scrum.<br>          Elimina obstáculos y fomenta un entorno de trabajo colaborativo.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>❖	Equipo de Desarrollo:</strong><br>Campos Diego<br>Aichino Roman<br>Jeffer Max<br>Vivar Eduardo</p>", unsafe_allow_html=True)
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>Transforman elementos del Product Backlog en incrementos de producto entregables.<br>Transforman elementos del Product Backlog en incrementos de producto entregables.<br>Autónomos y autoorganizados, toman decisiones sobre cómo abordar tareas.<br>Colaboran para lograr los objetivos del Sprint.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Transforman elementos del Product Backlog en incrementos de producto entregables.<br>Autónomos y autoorganizados, toman decisiones sobre cómo abordar tareas.<br>Colaboran para lograr los objetivos del Sprint.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'><strong>Planificación en Scrum</strong></p>", unsafe_allow_html=True)
 
 with st.container():
