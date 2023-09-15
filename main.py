@@ -174,7 +174,7 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("Ingeniería de Datos")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>Ya habiendo nombrado anteriormente nuestro stack tecnológico, lo que queda es explicar cómo usamos cada herramienta, y el ciclo de vida del dato.<br></p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Ya habiendo nombrado anteriormente nuestro stack tecnológico, lo que queda es explicar cómo usamos cada herramienta, y el ciclo de vida del dato.</p>", unsafe_allow_html=True)
   st.image(ciclo_dato, output_format="png")
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Nuestros datos principales son extraídos desde un Google Drive que nos aportó el cliente, a partir de ellos lo primero que hicimos fue realizarles el ETL con Google Colab.<br>Imagen que demuestra la creación de varios colabs en una carpeta e Google Drive:</p>", unsafe_allow_html=True)
   st.image(caping1, use_column_width=True, output_format="JPEG")
