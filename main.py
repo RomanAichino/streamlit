@@ -40,6 +40,10 @@ caping2 = Image.open("Imagenes/cap_ing2.jpg")
 caping3 = Image.open("Imagenes/cap_ing3.jpg")
 caping4 = Image.open("Imagenes/cap_ing4.jpg")
 
+dashboard1 = Image.open("Imagenes/Dashboard 1.jpg")
+dashboard2 = Image.open("Imagenes/Dashboard 2.jpg")
+dashboard3 = Image.open("Imagenes/Dashboard 3.jpg")
+
 
 # Crea un archivo HTML con los estilos CSS
 #with open("estilos.html", "w") as f:
@@ -168,10 +172,6 @@ with st.container():
 
 with st.container():
   st.write("---")
-  st.subheader("Análisis de Datos")
-
-with st.container():
-  st.write("---")
   st.subheader("Ingeniería de Datos")
   st.markdown("<p style='text-align: justify; font-size: 18px;'>Ya habiendo nombrado anteriormente nuestro stack tecnológico, lo que queda es explicar cómo usamos cada herramienta, y el ciclo de vida del dato.<br>Nuestros datos principales son extraídos desde un Google Drive que nos aportó el cliente, a partir de ellos lo primero que hicimos fue realizarles el ETL con Google Colab.<br>Imagen que demuestra la creación de varios colabs en una carpeta e Google Drive:</p>", unsafe_allow_html=True)
   st.image(caping1, use_column_width=True, output_format="JPEG")
@@ -205,7 +205,7 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("KPIs (Indicadores Clave de Desempeño)")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CRECIMIENTO DE CANTIDAD DE RESTAURANTES POR CIUDAD (Ciudad): Negocios afiliados mes / Negocios afiliados mes anterior.(este indicador nos sirve para monitorear si el sector esta en auge o en declive en cada ciudad)</p>", unsafe_allow_html=True)
+  #st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE CRECIMIENTO DE CANTIDAD DE RESTAURANTES POR CIUDAD (Ciudad): Negocios afiliados mes / Negocios afiliados mes anterior.(este indicador nos sirve para monitorear si el sector esta en auge o en declive en cada ciudad)</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>TASA DE RELACION VALORACIONES POSITIVAS (Ciudad): Reseña positivas del mes / Reseñas registradas del mes. (reseña positiva = valoración >= 4).</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE DISPONIBILIDAD DE ATRIBUTOS DE RESTAURANTE(Restaurantes): Disponibilidad de atributos de un restaurante/Cantidad de atributos ofrecidos en los restaurantes.</p>", unsafe_allow_html=True)
   st.markdown("<p style='text-align: justify; font-size: 18px;'>KPI DE ANALISIS DE SENTIMIENTO POR RESTAURANTE(Restaurante): Puntaje de restaurante (cerca de -1  = malo, cerca de 1 = bueno)</p>", unsafe_allow_html=True)
@@ -215,12 +215,18 @@ with st.container():
 with st.container():
   st.write("---")
   st.subheader("Dashboard")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>aaa</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Estas son las 3 pagínas del Dashboard en orden, en las dos primeras estamos viendo información relacioanda a las ciudades, y en la tercera, información relacionada a los atributos de los restaurantes.</p>", unsafe_allow_html=True)
+  st.image(dashboard1, use_column_width=True, output_format="JPEG")
+  st.image(dashboard2, use_column_width=True, output_format="JPEG")
+  st.image(dashboard3, use_column_width=True, output_format="JPEG")
 
 with st.container():
   st.write("---")
   st.subheader("Conclusiones")
-  st.markdown("<p style='text-align: justify; font-size: 18px;'>aaa</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>Tras los gráficos del dashboard y lo hablado en la presentación final, podemos concluir 3 cosas:</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>1: Que tras basarnos en las 5 ciudades con más restaurantes, concluimos que las 3 mejores opciones son Miame, Orlando y Tampa, tras comprobar que sus restaurantes son los que cuentan con mayor índice de valoraciones positivas y satisfacción.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>2: Que las tres ciudades recién mencionadas, podemos verificar también su ingreso poblacional, el costo de vida y la calidad del aire, lo que nos dejaría como mejor opción a la ciudad de Tampa.</p>", unsafe_allow_html=True)
+  st.markdown("<p style='text-align: justify; font-size: 18px;'>3: Una vez obtenida la mejor ciudad en la que poder poner un restaurante con las exigencias del cliente, debemos tener en cuenta que el promedio de atributos por restaurante de Tampa es de 14, por lo que a la hora de poner un restaurante competitivo minimamente deberá tener 14 atributos, entre los cuales se encuentran delivery, dinner, etc.</p>", unsafe_allow_html=True)
 
 with st.container():
   st.write("---")
