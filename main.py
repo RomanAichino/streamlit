@@ -235,7 +235,7 @@ with st.container():
   st.write("---")
   st.subheader("Referencias")
   st.write("[Página donde se encuentra la API utilizada en el proyecto >>](https://www.iqair.com/)")
-  st.write("[Reositorio del proyecto >>](https://github.com/RomanAichino/Proyecto_Final_Yelp_GoogleMaps)")
+  st.write("[Repositorio del proyecto >>](https://github.com/RomanAichino/Proyecto_Final_Yelp_GoogleMaps)")
 
 ##enctype="multipart/form-data"
 with st.container():
